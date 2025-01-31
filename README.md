@@ -31,10 +31,14 @@ Below is a simplified flow chart illustrating how the system works:
    v                                        
 [MongoDB] <---- Storing and retrieving data (User, Recipe)
 
+
 The user opens the main page.
 If not logged in, they can register or log in.
 Once logged in, they can manage recipes (add or delete).
 All requests (GET, POST, DELETE) are sent to the server (Node + Express), which communicates with MongoDB for data storage.
+
+
+
 
 
 
