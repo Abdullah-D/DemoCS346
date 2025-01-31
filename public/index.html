@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Recipe Manager</h1>
+  </header>
+
+  <main>
+    <section id="auth-section">
+      <h2>User Authentication</h2>
+      <form id="register-form">
+        <h3>Register</h3>
+        <label for="reg-username">Username</label>
+        <input type="text" id="reg-username" required />
+        
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" required />
+        
+        <button type="submit">Register</button>
+      </form>
+
+      <form id="login-form">
+        <h3>Login</h3>
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required />
+        
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required />
+        
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="recipe-manager" class="hidden">
+      <h2>Add a New Recipe</h2>
+      <form id="recipe-form">
+        <label for="recipe-name">Recipe Name</label>
+        <input type="text" id="recipe-name" placeholder="Recipe Name" required />
+        
+        <label for="recipe-steps">Recipe Steps</label>
+        <textarea id="recipe-steps" placeholder="Recipe Steps" required></textarea>
+        
+        <label for="recipe-image">Upload an Image</label>
+        <input type="file" id="recipe-image" accept="image/*" />
+
+        <button type="submit">Add Recipe</button>
+      </form>
+
+      <h2>Your Recipes</h2>
+      <div id="recipes-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
