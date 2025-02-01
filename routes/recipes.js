@@ -4,7 +4,7 @@ const authMiddleware = require("../middleware/auth");
 const Recipe = require("../models/recipe");
 
 
-router.get("/", async (req, res) => {
+router.get("/", async (req, res) => {{
   try {
     const recipes = await Recipe.find();
     res.json(recipes);
